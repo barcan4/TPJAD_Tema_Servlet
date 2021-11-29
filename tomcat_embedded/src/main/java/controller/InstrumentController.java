@@ -29,6 +29,7 @@ public class InstrumentController {
 
     public void delete(int index) {
         this.repo.getInstrumentList().remove(index - 1);
+        Instrument.count.decrementAndGet();
     }
 
     public void update(int index, String name, String type, double price) {
