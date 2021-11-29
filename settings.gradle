@@ -3,4 +3,8 @@ include 'tomcat_embedded'
 include 'jetty_embedded'
 include 'wildfly_server'
 include 'glassfish_server'
+include 'glassfish_server'
+include 'wildfly_server'
+include 'tomcat_server'
+include 'jetty_server'
 

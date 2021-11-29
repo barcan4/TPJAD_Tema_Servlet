@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/glassfish_server" />
             <option value="$PROJECT_DIR$/jetty_embedded" />
             <option value="$PROJECT_DIR$/tomcat_embedded" />
+            <option value="$PROJECT_DIR$/tomcat_server" />
             <option value="$PROJECT_DIR$/wildfly_server" />
           </set>
         </option>
