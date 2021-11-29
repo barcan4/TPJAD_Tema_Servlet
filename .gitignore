@@ -1,0 +1,9 @@
+# Project exclude paths
+/.gradle/
+/build/
+/glassfish_server/build/
+/jetty_embedded/build/
+/jetty_embedded/build/classes/java/main/
+/tomcat_embedded/build/
+/tomcat_embedded/build/classes/java/main/
+/wildfly_server/build/

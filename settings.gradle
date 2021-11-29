@@ -1,0 +1,6 @@
+rootProject.name = 'TPJAD_Tema_Servlet'
+include 'tomcat_embedded'
+include 'jetty_embedded'
+include 'wildfly_server'
+include 'glassfish_server'
+
