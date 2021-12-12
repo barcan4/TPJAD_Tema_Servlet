@@ -11,4 +11,5 @@ repositories {
 
 dependencies {
     testImplementation 'junit:junit:4.11'
+    implementation group:'org.apache.tomcat', name:'tomcat-servlet-api', version: '8.5.23'
 }
