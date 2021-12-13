@@ -15,14 +15,13 @@ public class dispatcherHTML extends HttpServlet {
 
     protected void procReq(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int actiune = 0;
-        String actiuneView = "";
         int addFlag = 0;
         int updateFlag = 0;
         int deleteFlag = 0;
-        String nume = "";
-        String type = "";
-        double pret = 0.0;
-        int index = 0;
+        String nume;
+        String type;
+        double pret;
+        int index;
 
         try {
             if (req.getParameter("deleteBtn").equals("Delete")) {
@@ -33,7 +32,6 @@ public class dispatcherHTML extends HttpServlet {
         }
         catch (Exception e) {
             System.out.println("Eroare la trimiterea cererii catre stergere!" + "\n" + e.getMessage());
-            actiuneView = "";
         }
 
         try {
@@ -45,7 +43,6 @@ public class dispatcherHTML extends HttpServlet {
             }
         } catch (Exception e) {
             System.out.println("Eroare la trimiterea cererii catre actualizare!" + "\n" + e.getMessage());
-            actiuneView = "";
         }
 
         try {
@@ -104,11 +101,8 @@ public class dispatcherHTML extends HttpServlet {
 
         req.setAttribute("controller", instrumentController);
 
-        if (actiuneView.isEmpty()) {
-            System.out.println("actiuneView: " + actiuneView);
-            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/view");
-            requestDispatcher.forward(req, resp);
-        }
+        RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/view");
+        requestDispatcher.forward(req, resp);
     }
 
     @Override
